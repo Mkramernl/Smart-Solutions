@@ -1,0 +1,1 @@
+<?php /**PATH C:\laragon\www\smart-solutions\resources\views/components/navbar.blade.php ENDPATH**/ ?>
