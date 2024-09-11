@@ -1,0 +1,103 @@
+
+body {
+    background-color: lightyellow;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 16px;
+}
+
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:lightyellow;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+h1, h2 {
+    color: blue;
+    text-align: center;
+}
+
+
+p {
+    color: blue;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+/* Formulier styling */
+form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Labels en input velden */
+label {
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Submit button */
+input[type="submit"] {
+    grid-column: span 2;
+    padding: 12px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue;
+}
+
+/* Responsive voor mobiele apparaten */
+@media (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
